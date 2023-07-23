@@ -63,10 +63,7 @@ def process_properties(tt, df):
                 print(pg)
 
             pg = str(pg)
-            min_floor_area = str(min_floor_area)
-            max_floor_area = str(max_floor_area)
-            min_num_bedrooms = str(min_num_bedrooms)
-            max_num_bedrooms = str(max_num_bedrooms)
+            # Removed the redefinition of min_floor_area, max_floor_area, min_num_bedrooms, and max_num_bedrooms
 
             # Create url
             url = f'https://www.immoweb.be/en/search/{property_type}/{tt}/st-gilles/{pc}?countries=BE&minBedroomCount={min_num_bedrooms}&maxBedroomCount={max_num_bedrooms}&maxSurface={max_floor_area}&minSurface={min_floor_area}&page={pg}&orderBy=relevance'
